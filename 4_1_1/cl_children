@@ -1,0 +1,18 @@
+#include "cl_children.h"
+
+cl_children::cl_children(int privateInt, int publicInt) : cl_parent(privateInt, publicInt)
+{
+	private_integer = privateInt;
+	integer = publicInt;
+}
+
+void cl_children::show_integers()
+{
+	std::cout << private_integer << "    " << integer;
+}
+
+void cl_children::change_integers(int privateInt, int publicInt)
+{
+	private_integer = privateInt;
+	integer = publicInt;
+}
