@@ -9,5 +9,5 @@ int main()
     for (; abs(num) >= 10; num /= 10) length++;
     std::cout << "Number of digits: " << length;
 
-    return(0);
+    return 0;
 }
